@@ -9,20 +9,19 @@ import { ArrayType } from "@angular/compiler";
 export class UserComponent implements OnInit {
 
   username: string;
-  wishlist: ArrayType; 
-  friends: ArrayType;
+  wishlist: any[]; 
+  friends: any[];
   budget: number;
   amount_spent: number;
   profile_details: string;
 
-  constructor(name: string) {
-    /*
+  constructor(name: string, b: number, profile_deets: string) {
     this.username = name;
     this.wishlist = [];
-    this.friends = new ArrayType();
-    this.budget = budget;
-    this.amount_spent = amount_spent;
-    this.profile_details = profile_details;*/
+    this.friends = [];
+    this.budget = b;
+    this.amount_spent = 0;
+    this.profile_details = profile_deets;
    }
 
   ngOnInit() {
