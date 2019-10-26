@@ -27,9 +27,31 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
   }
-  /*
+  
   addItemToWishlist(i:ItemComponent) {
+    this.wishlist.push(i);
+  }
 
-  }*/
+  addFriend(f:UserComponent) {
+    this.friends.push(f);
+  }
+
+  getRemainingFunds() {
+    return this.budget - this.amount_spent;
+  }
+
+  claimItem(i:ItemComponent) {
+    i.isClaimed = true;
+  }
+
+  buyItem(i:ItemComponent) {
+    i.isBought = true;
+    i.isClaimed = true;
+    this.amount_spent -= i.price;
+  }
+
+  unClaimItem(i:ItemComponent) {
+    i.isClaimed = false;
+  }
 
 }

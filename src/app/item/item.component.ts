@@ -24,6 +24,8 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  //am item cannot claim or buy itself so this function is moving to the user class
+  /*
   claim() {
     this.isClaimed = true;
   }
@@ -36,5 +38,6 @@ export class ItemComponent implements OnInit {
   unClaim() {
     this.isClaimed = false;
   }
+  */
 
 }
