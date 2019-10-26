@@ -16,12 +16,13 @@ export class UserComponent implements OnInit {
   profile_details: string;
 
   constructor(name: string) {
+    /*
     this.username = name;
     this.wishlist = [];
     this.friends = new ArrayType();
     this.budget = budget;
     this.amount_spent = amount_spent;
-    this.profile_details = profile_details;
+    this.profile_details = profile_details;*/
    }
 
   ngOnInit() {
