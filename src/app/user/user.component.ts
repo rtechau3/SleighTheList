@@ -54,4 +54,8 @@ export class UserComponent implements OnInit {
     i.isClaimed = false;
   }
 
+  setBudget(x:number) {
+    this.budget = x;
+  }
+
 }
