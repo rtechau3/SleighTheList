@@ -11,15 +11,30 @@ export class ItemComponent implements OnInit {
   price: number;
   isClaimed: boolean;
   isBought: boolean;
+  link: string;
 
-  constructor(myName: string, myPrice: number) {
+  constructor(myName: string, myPrice: number, myLink: string) {
     this.name = myName;
     this.price = myPrice;
     this.isClaimed = false;
     this.isBought = false;
-   }
+    this.link = myLink || ""; // optional parameter
+  }
 
   ngOnInit() {
+  }
+
+  claim() {
+    this.isClaimed = true;
+  }
+
+  buy() {
+    this.isBought = true;
+    this.isClaimed = true;
+  }
+
+  unClaim() {
+    this.isClaimed = false;
   }
 
 }

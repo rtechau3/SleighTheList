@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArrayType } from "@angular/compiler";
+import { ItemComponent } from '../item/item.component';
 
 @Component({
   selector: 'app-user',
@@ -9,8 +10,8 @@ import { ArrayType } from "@angular/compiler";
 export class UserComponent implements OnInit {
 
   username: string;
-  wishlist: any[]; 
-  friends: any[];
+  wishlist: ItemComponent[]; 
+  friends: UserComponent[];
   budget: number;
   amount_spent: number;
   profile_details: string;
@@ -21,10 +22,14 @@ export class UserComponent implements OnInit {
     this.friends = [];
     this.budget = b;
     this.amount_spent = 0;
-    this.profile_details = profile_deets;
+    this.profile_details = profile_deets || ""; //optional param
    }
 
   ngOnInit() {
   }
+  /*
+  addItemToWishlist(i:ItemComponent) {
+
+  }*/
 
 }
