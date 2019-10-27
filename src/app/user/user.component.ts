@@ -26,6 +26,8 @@ export class UserComponent implements OnInit {
     this.profile_details = profile_deets || ""; //optional param
    }
 
+  
+
   ngOnInit() {
   }
   
