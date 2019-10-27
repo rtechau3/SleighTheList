@@ -1,0 +1,44 @@
+{
+    "Users" : [
+        {
+            "name" : "Kyra",
+            "wishlist" : [],
+            "friends" : [
+                "Will",
+                "Mom",
+                "Dad",
+                "Kat",
+                "Alex",
+                "Elizabeth",
+                "Rachel",
+                "Katie",
+                "Kathryn",
+                "Ali",
+                "Abbie",
+                "Jordyn",
+                "Alexis",
+                "Shirley"
+            ],
+            "budget" : 200,
+            "amount_spent" : 57,
+            "profile_details" : "All I want for Christmas is a diamond ring. And a degree."
+        },
+        {
+            "name" : "Ali",
+            "wishlist" : [],
+            "friends" : [
+                "Ryan",
+                "Elizabeth",
+                "Rachel",
+                "Katie",
+                "Kathryn",
+                "Ali",
+                "Abbie",
+                "Jordyn"
+            ],
+            "budget" : 250,
+            "amount_spent" : 138,
+            "profile_details" : "All I want for Christmas is a bunch of Harry Potter swag. Merry Christmas ya filthy Muggle."
+        }
+    ]
+}

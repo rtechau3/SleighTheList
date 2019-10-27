@@ -4,7 +4,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
-    path: 'profile', // a string that matches the URL in the browser address bar
+    path: 'user', // a string that matches the URL in the browser address bar
     component: ProfileComponent // the component that the router should create when navigating to this route
   }
 ];

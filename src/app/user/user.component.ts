@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArrayType } from "@angular/compiler";
 import { ItemComponent } from '../item/item.component';
+import { User } from './user.model';
 
 @Component({
   selector: 'app-user',
@@ -11,7 +12,7 @@ export class UserComponent implements OnInit {
 
   username: string;
   wishlist: ItemComponent[]; 
-  friends: UserComponent[];
+  friends: string[];
   budget: number;
   amount_spent: number;
   profile_details: string;
@@ -32,7 +33,7 @@ export class UserComponent implements OnInit {
     this.wishlist.push(i);
   }
 
-  addFriend(f:UserComponent) {
+  addFriend(f:string) {
     this.friends.push(f);
   }
 
@@ -57,5 +58,48 @@ export class UserComponent implements OnInit {
   setBudget(x:number) {
     this.budget = x;
   }
+
+  Users: User[] =  [
+    {
+        username: "Kyra",
+        wishlist: [],
+        friends: [
+            "Will",
+            "Mom",
+            "Dad",
+            "Kat",
+            "Alex",
+            "Elizabeth",
+            "Rachel",
+            "Katie",
+            "Kathryn",
+            "Ali",
+            "Abbie",
+            "Jordyn",
+            "Alexis",
+            "Shirley"
+        ],
+        budget: 200,
+        amount_spent: 57,
+        profile_details: "All I want for Christmas is a diamond ring. And a degree."
+    },
+    {
+        username: "Ali",
+        wishlist: [],
+        friends: [
+            "Ryan",
+            "Elizabeth",
+            "Rachel",
+            "Katie",
+            "Kathryn",
+            "Ali",
+            "Abbie",
+            "Jordyn"
+        ],
+        budget : 250,
+        amount_spent : 138,
+        profile_details : "All I want for Christmas is a bunch of Harry Potter swag. Merry Christmas ya filthy Muggle."
+    }];
+
 
 }

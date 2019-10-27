@@ -15,4 +15,6 @@ export class ProfileComponent implements OnInit {
   name = "Kyra";
   description = "All I want for Christmas is a diamond ring. And a degree.";
 
+
+
 }
