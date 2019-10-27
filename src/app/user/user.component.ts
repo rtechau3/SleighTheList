@@ -61,7 +61,7 @@ export class UserComponent implements OnInit {
     this.budget = x;
   }
 
-  Users: User[] =  [
+  static Users: User[] =  [
     {
         username: "Kyra",
         wishlist: [],
@@ -103,5 +103,19 @@ export class UserComponent implements OnInit {
         profile_details : "All I want for Christmas is a bunch of Harry Potter swag. Merry Christmas ya filthy Muggle."
     }];
 
+  /**
+   * method that takesin a string (from a friends list of a user for example)
+   * returns: a User Instance of the same name or null if it doesn't exist
+   */
+  static staticMethod(str:string) {
+    UserComponent.Users.forEach(loopAndSearch);
+
+  function loopAndSearch(item, index, arr) {
+    if (arr[index] == str) {
+      return arr[index];
+    }
+  }
+    return null;
+  }
 
 }
